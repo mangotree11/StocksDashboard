@@ -2,25 +2,48 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Stocks Dashboard</title>
+<title>Stocks and Crypto Dashboard</title>
+
 </head>
 	
 <!-- BTC Widget BEGIN -->
-<div style="height:500px; width:600px;">
+<section class="child">
+<div style="height: auto; 
+			width: 500px; 
+			margin: auto;
+			float: none">
 	<div class="nomics-ticker-widget" data-name="Bitcoin" data-base="BTC" data-quote="USD">
 	</div>
 <script src="https://widget.nomics.com/embed.js">
 	</script>
-<!--BTC widget -->
+	</div>
+	</section>
+<!--BTC widget END -->
+
+<!-- eth widget BEGIN -->
+<section class="child">
+	<div style="height: auto; 
+			width: 500px; 
+			margin: auto;
+			float: none">
+<div class="nomics-ticker-widget" data-name="Ethereum" data-base="ETH" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+<section class="child">
+
+<!-- eth widget END -->
 	
 <!-- TradingView Widget BEGIN -->
+<section class="child">
+	<div style="height: auto; 
+			width: 500px; 
+			margin: middle;
+			float: bottom">
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank">
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
   {
   "colorTheme": "light",
-  "dateRange": "12M",
+  "dateRange": "1D",
   "showChart": true,
   "locale": "en",
   "largeChartUrl": "",
@@ -28,7 +51,7 @@
   "showSymbolLogo": true,
   "showFloatingTooltip": false,
   "width": "100%",
-  "height": "660",
+  "height": "500",
   "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
   "plotLineColorFalling": "rgba(41, 98, 255, 1)",
   "gridLineColor": "rgba(240, 243, 250, 0)",
@@ -51,28 +74,27 @@
           "d": "APPLE"
         },
         {
-          "s": "NASDAQ:GOOGL",
-          "d": "GOOGLE"
-        },
-        {
-          "s": "NYSE:AMC",
-          "d": "AMC"
+          "s": "NASDAQ:TSLA",
+          "d": "TESLA"
         },
         {
           "s": "NYSE:GME",
           "d": "GAMESTOP"
         },
         {
-          "s": "NASDAQ:TSLA",
-          "d": "TSLA"
+          "s": "NYSE:AMC",
+          "d": "AMC"
         }
       ],
       "originalTitle": "Indices"
     }
   ]
 }
-  </script>
-</div>
+	  </script>
+	  </section>
+
+	
+	 
 <!-- TradingView Widget END -->
 	  
 
