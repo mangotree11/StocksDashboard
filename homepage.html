@@ -1,55 +1,62 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Stocks and Crypto Dashboard</title>
-<style>
-	h1 {text-align: center;};
-	</style>	
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="style.css">
 
+<title>Dashboard</title>
 </head>
-<body><h1>Stocks & Crypto Dashboard</h1>
+
+<body>
+  <style>h1 {text-align: center;}</style>
+  <h1></h1>
 </body>
 	
+<!-- Ticker Widget BEGIN -->
+<div class="ticker">
+  <div class="cryptohopper-web-widget" data-id="2">
+  </div>
+  <script src="https://www.cryptohopper.com/widgets/js/script">
+  </script>
+  </div>
+  
+  <!-- Ticker Widget END -->
+  
 <!-- BTC Widget BEGIN -->
-<section class="child">
-<div style="height: auto; 
-			width: 500px; 
-			margin: auto;
-			float: none">
-	<div class="nomics-ticker-widget" data-name="Bitcoin" data-base="BTC" data-quote="USD">
-	</div>
+<div class="btc">
+	<div class="nomics-ticker-widget" 
+  data-name="Bitcoin" 
+  data-base="BTC" 
+  data-quote="USD">
+</div>
 <script src="https://widget.nomics.com/embed.js">
 	</script>
   </div>
-</section>
 <!--BTC widget END -->
 
 <!-- eth widget BEGIN -->
-<section class="child">
-	<div style="height: auto; 
-			width: 500px; 
-			margin: auto;
-			float: none;
-			display: none">
-<div class="nomics-ticker-widget" data-name="Ethereum" data-base="ETH" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+<div class="eth">
+  <div class="nomics-ticker-widget" 
+  data-name="Ethereum" 
+  data-base="ETH" 
+  data-quote="USD">
+</div>
+<script src="https://widget.nomics.com/embed.js">
+</script>
 	</div>
-</section>
 
 <!-- eth widget END -->
 	
 <!-- TradingView Widget BEGIN -->
-<section class="child">
-	<div style="height: auto; 
-			width: 500px; 
-			margin: auto;
-			float: bottom;
-			display: block;
-			border: 1px solid black;">
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank">
-<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+<div class="stocks">
+  <div class="tradingview-widget-container__widget">
+  </div>
+  <div class="tradingview-widget-copyright">
+    <a href="https://www.tradingview.com" 
+    rel="noopener" 
+    target="_blank">
+<script type="text/javascript" 
+src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
   {
   "colorTheme": "light",
   "dateRange": "1D",
@@ -100,22 +107,11 @@
   ]
 }
 	  </script>
-	  </section>
+	  </div>
 
 	
 	 
 <!-- TradingView Widget END -->
-	  
-<!-- News -->
-	  <div style="height: auto; 
-			width: 500px; 
-			margin: auto;
-			float: bottom;
-			display: none;
-		   	border: 1px solid black;">
-	  <a href="https://cryptopanic.com/" target="_blank" data-news_feed="recent" data-font_size="13" data-bg_color="#FFFFFF" data-text_color="#333333" data-link_color="#0091C2" data-header_bg_color="#30343B" data-header_text_color="#FFFFFF" data-font_family="mono" class="CryptoPanicWidget">News</a>
-<script src="https://static.cryptopanic.com/static/js/widgets.min.js"></script>
-<!-- News -->
 
 	
 	
