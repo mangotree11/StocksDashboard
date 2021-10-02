@@ -1,0 +1,66 @@
+body {
+  background-color: whitesmoke;
+  font-size: 0.8em;
+}
+
+.navbar {
+  text-align: left;
+  width: 500px;
+  margin: auto;
+}
+
+nav {
+  display: none;
+}
+
+.container {
+  display: flex;
+  place-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: black;
+
+  span {
+    color: blue;
+  }
+}
+
+.mobile-menu {
+  width: 20px;
+  height: 20px;
+}
+
+.ticker {
+  height: auto;
+  width: 500px;
+  margin: auto;
+  float: bottom;
+  display: block;
+  border: none;
+}
+.btc {
+  height: auto;
+  width: 500px;
+  margin: auto;
+  float: none;
+  display: block;
+}
+.eth {
+  height: auto;
+  width: 500px;
+  margin: auto;
+  float: none;
+  display: none;
+}
+.stocks {
+  height: auto;
+  width: 500px;
+  margin: auto;
+  float: bottom;
+  display: block;
+  border: none;
+}
