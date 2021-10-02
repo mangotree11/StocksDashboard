@@ -2,14 +2,27 @@
 <html>
 <head>
 <meta charset="utf-8"> 
-<link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="css/style.css">
 <title>Dashboard</title>
 </head>
 
 <body>
-  <style>h1 {text-align: center;}</style>
-  <h1></h1>
+  <div class="navbar">
+    <div class="container">
+    <a class="logo" href="#">Dash<span>board</span></a>
+    <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="menu">
+    <nav>
+    <ul class="primary-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+    <ul class="secondary-nav">
+      <li><a href="#">Contact</a></li>
+      <li class="premium"><a href="#">Premium</a></li>
+    </ul>
+  </nav>
+</div></div>
 </body>
 	
 <!-- Ticker Widget BEGIN -->
@@ -19,7 +32,6 @@
   <script src="https://www.cryptohopper.com/widgets/js/script">
   </script>
   </div>
-  
   <!-- Ticker Widget END -->
   
 <!-- BTC Widget BEGIN -->
@@ -32,9 +44,9 @@
 <script src="https://widget.nomics.com/embed.js">
 	</script>
   </div>
-<!--BTC widget END -->
+<!--BTC Widget END -->
 
-<!-- eth widget BEGIN -->
+<!-- ETH Widget BEGIN -->
 <div class="eth">
   <div class="nomics-ticker-widget" 
   data-name="Ethereum" 
@@ -44,8 +56,7 @@
 <script src="https://widget.nomics.com/embed.js">
 </script>
 	</div>
-
-<!-- eth widget END -->
+<!-- ETH Widget END -->
 	
 <!-- TradingView Widget BEGIN -->
 <div class="stocks">
