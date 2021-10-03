@@ -68,4 +68,8 @@ body {
   display: block;
   border: none;
 }
+
+.stockticker {
+  width: auto;
+}
 /*# sourceMappingURL=style.css.map */
