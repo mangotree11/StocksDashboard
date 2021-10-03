@@ -5,19 +5,14 @@ body {
 
 .navbar {
   text-align: left;
-  width: 600px;
+  width: 720px;
   margin: auto;
+  background: white;
+  padding: 1em;
 }
 
 .navbar nav {
   display: none;
-}
-
-.navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
 }
 
 .logo {
@@ -35,14 +30,14 @@ body {
 }
 
 .mobile-menu {
+  cursor: pointer;
   width: 20px;
   height: 20px;
-  cursor: pointer;
 }
 
 .ticker {
   height: auto;
-  width: 600px;
+  width: 700px;
   margin: auto;
   float: bottom;
   display: block;
@@ -67,7 +62,7 @@ body {
 
 .stocks {
   height: auto;
-  width: 600px;
+  width: 700px;
   margin: auto;
   float: bottom;
   display: block;
