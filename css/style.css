@@ -12,6 +12,14 @@ body {
 }
 
 .navbar nav {
+  display: inline-block;
+}
+
+.navbar nav .primary-nav {
+  width: 500px;
+}
+
+.navbar nav .secondary-nav {
   display: none;
 }
 

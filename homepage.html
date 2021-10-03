@@ -11,20 +11,33 @@
   <div class="navbar">
     <div class="container">
     <a class="logo" href="#">Dash<span>board</span></a>
-    <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="menu">
+    
+  
+    
     <nav>
-    <ul class="primary-nav">
-      <li><a href="">Home</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">FAQ</a></li>
-    </ul>
+    <div class="primary-nav">
+      <a href="#">Features</a> 
+      <small>|</small>
+      <a href="#">Premium</a> 
+      <small>|</small>
+      <a href="#">Learn</a> 
+      <small>|</small>
+      <a href="#">Support</a> 
+  
+    </div>
     <ul class="secondary-nav">
-      <li><a href="#">Contact</a></li>
-      <li class="premium"><a href="#">Premium</a></li>
+      <a href="#">FAQs</a>
+      <a href="#">Careers</a>
     </ul>
   </nav>
+
+  <img id="mobile-cta" 
+  class="mobile-menu" 
+  src="images/menu.svg" alt="menu">
 </div></div>
 </body>
+
+
 	
 <div class="navbar">
 <!-- Ticker Widget BEGIN -->
@@ -84,7 +97,7 @@ src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.
   "largeChartUrl": "",
   "isTransparent": false,
   "showSymbolLogo": true,
-  "showFloatingTooltip": false,
+  "showFloatingTooltip": true,
   "width": "100%",
   "height": "500",
   "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
@@ -101,24 +114,24 @@ src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.
       "title": "Indices",
       "symbols": [
         {
-          "s": "CAPITALCOM:SPY",
+          "s": "FOREXCOM:SPXUSD",
           "d": "S&P 500"
+        },
+        {
+          "s": "FOREXCOM:DJI",
+          "d": "DOW JONES 30"
         },
         {
           "s": "NASDAQ:AAPL",
           "d": "APPLE"
         },
         {
+          "s": "NASDAQ:MSFT",
+          "d": "MICROSOFT"
+        },
+        {
           "s": "NASDAQ:TSLA",
           "d": "TESLA"
-        },
-        {
-          "s": "NYSE:GME",
-          "d": "GAMESTOP"
-        },
-        {
-          "s": "NYSE:AMC",
-          "d": "AMC"
         }
       ],
       "originalTitle": "Indices"
@@ -131,6 +144,8 @@ src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.
 	
 	 
 <!-- TradingView Widget END -->
+
+
 
 <!-- Macroaxis Widget Start -->
 <script src="https://www.macroaxis.com/widgets/url.jsp?t=62&s=

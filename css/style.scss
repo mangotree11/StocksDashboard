@@ -11,7 +11,14 @@ body {
   padding: 1em;
 
   nav {
-    display: none;
+    display: inline-block;
+
+    .primary-nav {
+      width: 500px;
+    }
+    .secondary-nav {
+      display: none;
+    }
   }
 }
 
