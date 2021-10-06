@@ -3,6 +3,23 @@ body {
   font-size: 0.8em;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
 .navbar {
   text-align: left;
   width: 720px;
@@ -27,7 +44,7 @@ body {
   font-weight: bold;
   font-size: 1.1em;
   color: black;
-  cursor: default;
+  cursor: pointer;
   width: 20px;
   height: 20px;
 
@@ -42,8 +59,14 @@ body {
 
 .mobile-menu {
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 25x;
+  height: 25px;
+  transition: 3s ease-in; // how long it takes to change color when hovering over menu
+  filter: none;
+}
+
+.mobile-menu:hover {
+  filter: saturate(2878%); // saturation change when you hover over menu
 }
 
 .dropdown {

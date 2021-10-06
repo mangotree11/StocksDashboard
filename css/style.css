@@ -3,6 +3,23 @@ body {
   font-size: 0.8em;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
 .navbar {
   text-align: left;
   width: 720px;
@@ -28,7 +45,7 @@ body {
   font-weight: bold;
   font-size: 1.1em;
   color: black;
-  cursor: default;
+  cursor: pointer;
   width: 20px;
   height: 20px;
 }
@@ -43,8 +60,17 @@ body {
 
 .mobile-menu {
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 25x;
+  height: 25px;
+  -webkit-transition: 3s ease-in;
+  transition: 3s ease-in;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mobile-menu:hover {
+  -webkit-filter: saturate(2878%);
+          filter: saturate(2878%);
 }
 
 .dropdown {
