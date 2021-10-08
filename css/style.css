@@ -20,12 +20,16 @@ li a {
   background-color: #ffffff;
 }
 
+li a:hover {
+  background-color: rgba(193, 193, 193, 0.126);
+}
+
 .navbar {
   text-align: left;
   width: 720px;
   margin: auto;
   background: white;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .navbar nav {
@@ -82,7 +86,7 @@ li a {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  width: 150px;
+  width: 100px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 12px;
@@ -91,6 +95,11 @@ li a {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  background-color: white;
+}
+
+.dropdown-content:hover li a {
+  background-color: white;
 }
 
 .copyright {
@@ -110,7 +119,7 @@ a:hover {
 
 .ticker {
   height: auto;
-  width: 700px;
+  width: 99%;
   margin: auto;
   float: bottom;
   display: block;
@@ -135,7 +144,7 @@ a:hover {
 
 .stocks {
   height: auto;
-  width: 700px;
+  width: 100%;
   margin: auto;
   float: bottom;
   display: block;
