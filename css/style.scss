@@ -33,13 +33,27 @@ li a:hover {
 
   nav {
     display: inline-block;
+    padding: 0.1em;
 
     .primary-nav {
-      width: 500px;
+      width: 430px;
+      display: inline-flex;
     }
     .secondary-nav {
-      display: none;
+      display: inline-flex;
     }
+  }
+}
+
+li.premium-cta a {
+  color: blue;
+  border: 3px solid blue;
+  border-radius: 3em;
+  font-weight: bold;
+
+  &:hover {
+    background: blue;
+    color: white;
   }
 }
 
@@ -53,12 +67,8 @@ li a:hover {
   height: 20px;
 
   span {
-    color: blue;
+    color: rgba(0, 0, 255, 0.8);
   }
-}
-
-.primary-nav {
-  display: block;
 }
 
 .mobile-menu {
@@ -121,6 +131,7 @@ a:hover {
   float: bottom;
   display: block;
   border: none;
+  pointer-events: none;
 }
 .btc {
   height: auto;
@@ -128,6 +139,7 @@ a:hover {
   margin: auto;
   float: none;
   display: block;
+  pointer-events: none;
 }
 .eth {
   height: auto;
@@ -135,7 +147,9 @@ a:hover {
   margin: auto;
   float: none;
   display: block;
+  pointer-events: none;
 }
+
 .stocks {
   height: auto;
   width: 100%;
@@ -143,8 +157,10 @@ a:hover {
   float: bottom;
   display: block;
   border: none;
+  pointer-events: default;
 }
 
 .stockticker {
-  width: auto;
+  width: 100%;
+  pointer-events: none;
 }

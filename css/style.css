@@ -34,14 +34,32 @@ li a:hover {
 
 .navbar nav {
   display: inline-block;
+  padding: 0.1em;
 }
 
 .navbar nav .primary-nav {
-  width: 500px;
+  width: 430px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .navbar nav .secondary-nav {
-  display: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+li.premium-cta a {
+  color: blue;
+  border: 3px solid blue;
+  border-radius: 3em;
+  font-weight: bold;
+}
+
+li.premium-cta a:hover {
+  background: blue;
+  color: white;
 }
 
 .logo {
@@ -55,11 +73,7 @@ li a:hover {
 }
 
 .logo span {
-  color: blue;
-}
-
-.primary-nav {
-  display: block;
+  color: rgba(0, 0, 255, 0.8);
 }
 
 .mobile-menu {
@@ -124,6 +138,7 @@ a:hover {
   float: bottom;
   display: block;
   border: none;
+  pointer-events: none;
 }
 
 .btc {
@@ -132,6 +147,7 @@ a:hover {
   margin: auto;
   float: none;
   display: block;
+  pointer-events: none;
 }
 
 .eth {
@@ -140,6 +156,7 @@ a:hover {
   margin: auto;
   float: none;
   display: block;
+  pointer-events: none;
 }
 
 .stocks {
@@ -149,9 +166,11 @@ a:hover {
   float: bottom;
   display: block;
   border: none;
+  pointer-events: default;
 }
 
 .stockticker {
-  width: auto;
+  width: 100%;
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */
