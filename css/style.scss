@@ -18,6 +18,7 @@ li a {
   display: block;
   padding: 8px;
   background-color: #ffffff;
+  text-decoration: none;
 }
 
 li a:hover {
@@ -26,7 +27,7 @@ li a:hover {
 
 .navbar {
   text-align: left;
-  width: 720px;
+  width: 700px;
   margin: auto;
   background: white;
   padding: 0.5em;
@@ -36,13 +37,19 @@ li a:hover {
     padding: 0.1em;
 
     .primary-nav {
-      width: 430px;
+      width: 350px;
       display: inline-flex;
     }
     .secondary-nav {
       display: inline-flex;
     }
   }
+}
+
+.navbar input[type="text"] {
+  font-size: 1em;
+  max-width: 150px;
+  height: 25px;
 }
 
 li.premium-cta a {
@@ -111,7 +118,7 @@ li.premium-cta a {
 
 .copyright {
   text-align: center;
-  cursor: none;
+  cursor: default;
   pointer-events: none;
 }
 
@@ -163,4 +170,39 @@ a:hover {
 .stockticker {
   width: 100%;
   pointer-events: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.search input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 80%;
+  background: #ffffff;
+}
+
+/* Style the submit button */
+form.search button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #ffffff;
+}
+
+/* Clear floats */
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
 }
