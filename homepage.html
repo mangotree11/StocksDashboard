@@ -8,6 +8,8 @@
 </head>
 
 
+
+
 <!--Dashboard-->
 <body>
   <div class="navbar">
@@ -19,8 +21,8 @@
       <li><a href="#">Features</a></li> 
        <li><a href="#">Support</a></li> 
       <li><a href="#">Learn</a></li> 
-      <li><form class="search" action="action_page.php">
-        <input type="text" placeholder="Search.." name="search">
+      <li><form class="searchbar" action="action_page.php">
+        <input type="text" placeholder="Search here..." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form></li>
     </ul>
@@ -67,6 +69,67 @@
   <div class="row no-gutters">
     <div class="col no-gutters">
 <!-- BTC Widget BEGIN -->
+
+<!--BTC Widget END -->
+</div>
+
+<div class="col no-gutters">
+<!-- ETH Widget BEGIN -->
+
+<!-- ETH Widget END -->
+</div>
+
+<div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: none;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: rgb(191, 191, 191);
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class= "gridlist">
+<div id="btnContainer">
+  <button class="btn" onclick="listView()">
+    <i class="fa fa-bars"></i> List</button> 
+  <button class="btn active" onclick="gridView()">
+    <i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:rgb(255, 255, 255);">
+    <!-- BTC Widget BEGIN -->
 <div class="btc">
 	<div class="nomics-ticker-widget" 
   data-name="Bitcoin" 
@@ -77,10 +140,9 @@
 	</script>
   </div>
 <!--BTC Widget END -->
-</div>
-
-<div class="col no-gutters">
-<!-- ETH Widget BEGIN -->
+  </div>
+  <div class="column" style="background-color:rgb(255, 255, 255);">
+    <!-- ETH Widget BEGIN -->
 <div class="eth">
   <div class="nomics-ticker-widget" 
   data-name="Ethereum" 
@@ -91,8 +153,137 @@
 </script>
 	</div>
 <!-- ETH Widget END -->
+  </div>
 </div>
-	
+
+<div class="row">
+  <div class="column" style="background-color:rgb(255, 255, 255);">
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview1">
+  <div id="tradingview_0b819"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">Apple</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.MediumWidget(
+  {
+  "symbols": [
+    [
+      "Apple",
+      "AAPL"
+    ],
+    [
+      "Google",
+      "GOOGL"
+    ],
+    [
+      "Microsoft",
+      "MSFT"
+    ]
+  ],
+  "chartOnly": false,
+  "width": "100%",
+  "height": "360",
+  "locale": "en",
+  "colorTheme": "light",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "fontColor": "#787B86",
+  "isTransparent": false,
+  "autosize": false,
+  "showVolume": false,
+  "scalePosition": "left",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, SegoeUI, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "chartType": "line",
+  "container_id": "tradingview_0b819"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+  </div>
+  <div class="column" style="background-color:rgb(255, 255, 255);">
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview2">
+  <div id="tradingview_fa309"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-TSLA/" rel="noopener" target="_blank"><span class="blue-text">TSLA Stock Price Today</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.MediumWidget(
+  {
+  "symbols": [
+    [
+      "Tesla",
+      "NASDAQ:TSLA|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": "100%",
+  "height": "360",
+  "locale": "en",
+  "colorTheme": "light",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "fontColor": "#787B86",
+  "isTransparent": false,
+  "autosize": false,
+  "showVolume": false,
+  "scalePosition": "left",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, SegoeUI, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "chartType": "line",
+  "container_id": "tradingview_fa309"
+}
+  );
+  </script>
+</div>
+
+
+
+
+<!-- TradingView Widget END -->
+  </div>
+</div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</div>
+
+
+</div>
 <!-- TradingView Widget BEGIN -->
 <div class="stocks">
   <div class="tradingview-widget-container__widget"></div>
@@ -112,7 +303,7 @@ src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.
   "showSymbolLogo": true,
   "showFloatingTooltip": true,
   "width": "100%",
-  "height": "500",
+  "height": "300",
   "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
   "plotLineColorFalling": "rgba(41, 98, 255, 1)",
   "gridLineColor": "rgba(240, 243, 250, 0)",
@@ -131,20 +322,8 @@ src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.
           "d": "S&P 500"
         },
         {
-          "s": "FOREXCOM:DJI",
+          "s": "AMEX:DIA",
           "d": "DOW JONES 30"
-        },
-        {
-          "s": "NASDAQ:AAPL",
-          "d": "APPLE"
-        },
-        {
-          "s": "NASDAQ:MSFT",
-          "d": "MICROSOFT"
-        },
-        {
-          "s": "NASDAQ:TSLA",
-          "d": "TESLA"
         }
       ],
       "originalTitle": "Indices"
@@ -157,6 +336,16 @@ src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.
 	
 	 
 <!-- TradingView Widget END -->
+
+<div class="news">
+  <script type="text/javascript">
+  DukascopyApplet = {"type":"online_news","params":{"header":false,"borders":false,"defaultLanguage":"en","availableLanguages":["ar","bg","cs","de","en","es","fa","fr","he","hu","it","ja","ms","pl","pt","ro","ru","sk","sv","th","uk","zh"],"newsCategories":["finance","forex","stocks","commodities"],
+  "width":"100%","height":"400","adv":"popup"}};
+  </script><script type="text/javascript" 
+  src="https://freeserv-static.dukascopy.com/2.0/core.js">
+</script>
+  </div>
+
 
 
 
@@ -192,6 +381,10 @@ crm">
 <!-- Macroaxis Widget End -->
 
 
+  
+
+
+
 
 <div class="copyright">
   <small><a href=homepage.html>© 2021 Dashboard</a></small>
@@ -200,6 +393,8 @@ crm">
 
 
 </html>
+
+
 
 
 

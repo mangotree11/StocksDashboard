@@ -157,6 +157,10 @@ a:hover {
   pointer-events: none;
 }
 
+.tradingview {
+  width: 330;
+}
+
 .stocks {
   height: auto;
   width: 100%;
@@ -177,16 +181,16 @@ a:hover {
 }
 
 /* Style the search field */
-form.search input[type="text"] {
+form.searchbar input[type="text"] {
   padding: 10px;
-  font-size: 17px;
+  font-size: 11px;
   float: left;
-  width: 80%;
+  width: 75%;
   background: #ffffff;
 }
 
 /* Style the submit button */
-form.search button {
+form.searchbar button {
   float: left;
   width: 10%;
   padding: 10px;
@@ -196,12 +200,12 @@ form.search button {
   cursor: pointer;
 }
 
-form.search button:hover {
+form.searchbar button:hover {
   background: #ffffff;
 }
 
 /* Clear floats */
-form.search::after {
+form.searchbar::after {
   content: "";
   clear: both;
   display: table;

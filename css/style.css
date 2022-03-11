@@ -90,12 +90,12 @@ li.premium-cta a:hover {
   -webkit-transition: 3s ease-in;
   transition: 3s ease-in;
   -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .mobile-menu:hover {
   -webkit-filter: saturate(2878%);
-          filter: saturate(2878%);
+  filter: saturate(2878%);
 }
 
 .dropdown {
@@ -109,7 +109,7 @@ li.premium-cta a:hover {
   background-color: #f9f9f9;
   width: 100px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 12px;
   z-index: 2;
 }
@@ -166,6 +166,11 @@ a:hover {
   pointer-events: none;
 }
 
+.gridlist {
+  width: 100%;
+  padding: 9px;
+}
+
 .stocks {
   height: auto;
   width: 100%;
@@ -176,6 +181,33 @@ a:hover {
   pointer-events: default;
 }
 
+.news {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  float: bottom;
+  display: block;
+  border: none;
+  padding: 10px;
+  pointer-events: default;
+}
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+
+
 .stockticker {
   width: 100%;
   pointer-events: none;
@@ -183,20 +215,20 @@ a:hover {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Style the search field */
-form.search input[type="text"] {
+form.searchbar input[type="text"] {
   padding: 10px;
-  font-size: 17px;
+  font-size: 11px;
   float: left;
-  width: 80%;
+  width: 75%;
   background: #ffffff;
 }
 
 /* Style the submit button */
-form.search button {
+form.searchbar button {
   float: left;
   width: 10%;
   padding: 10px;
@@ -207,12 +239,12 @@ form.search button {
   cursor: pointer;
 }
 
-form.search button:hover {
+form.searchbar button:hover {
   background: #ffffff;
 }
 
 /* Clear floats */
-form.search::after {
+form.searchbar::after {
   content: "";
   clear: both;
   display: table;
