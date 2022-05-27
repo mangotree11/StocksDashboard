@@ -15,23 +15,38 @@
   <div class="navbar">
     <div class="container">
     <a class="logo" href="homepage.html">Dash<span>board</span></a>
+    
     <nav>
     <div class="primary-nav">
       <ul>
       <li><a href="#">Features</a></li> 
        <li><a href="#">Support</a></li> 
       <li><a href="#">Learn</a></li> 
+      <li></li>
+      <li>
       <li><form class="searchbar" action="action_page.php">
         <input type="text" placeholder="Search here..." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form></li>
+      <li></li>
     </ul>
+
+  
     </div><small>
     <ul class="secondary-nav">
       <li class="premium-cta"><a href="#">Premium</a></li>
-    </small></small>
+  
+  <small>
+
+
+  </ul>
+
+    <ul>
+      
     </ul>
   </nav>
+
+  
 
   <!--Dashboard-->
 
@@ -50,12 +65,15 @@
   </div>
   <!--dropdown menu-->
 
+
+
 </div></div>
 </body>
 
 
 	
 <div class="navbar">
+  
 <!-- Ticker Widget BEGIN -->
 <div class="ticker">
   <div class="cryptohopper-web-widget" data-id="2">
@@ -89,7 +107,7 @@
 .column {
   float: none;
   width: 50%;
-  padding: 10px;
+  padding: 1px;
 }
 
 /* Clear floats after the columns */
@@ -102,7 +120,7 @@
 .btn {
   border: none;
   outline: none;
-  padding: 12px 16px;
+  padding: 1px 1px;
   background-color: #f1f1f1;
   cursor: pointer;
 }
@@ -117,14 +135,16 @@
 }
 </style>
 </head>
-<body>
+
 <div class= "gridlist">
-<div id="btnContainer">
-  <button class="btn" onclick="listView()">
-    <i class="fa fa-bars"></i> List</button> 
-  <button class="btn active" onclick="gridView()">
-    <i class="fa fa-th-large"></i> Grid</button>
-</div>
+  <div class= "gridlist">
+    <div id="btnContainer">
+      <button class="btn" onclick="listView()">
+        <i class="fa fa-bars"></i> List</button> 
+      <button class="btn active" onclick="gridView()">
+        <i class="fa fa-th-large"></i> Grid</button>
+    </div>
+  
 <br>
 
 <div class="row">
@@ -139,7 +159,7 @@
 <script src="https://widget.nomics.com/embed.js">
 	</script>
   </div>
-<!--BTC Widget END -->
+<!--ETH Widget END -->
   </div>
   <div class="column" style="background-color:rgb(255, 255, 255);">
     <!-- ETH Widget BEGIN -->
@@ -161,7 +181,7 @@
     <!-- TradingView Widget BEGIN -->
 <div class="tradingview1">
   <div id="tradingview_0b819"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">Apple</span></a> by TradingView</div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
   new TradingView.MediumWidget(
@@ -182,14 +202,14 @@
   ],
   "chartOnly": false,
   "width": "100%",
-  "height": "360",
+  "height": "350",
   "locale": "en",
   "colorTheme": "light",
   "gridLineColor": "rgba(240, 243, 250, 0)",
   "fontColor": "#787B86",
   "isTransparent": false,
   "autosize": false,
-  "showVolume": false,
+  "showVolume": true,
   "scalePosition": "left",
   "scaleMode": "Normal",
   "fontFamily": "-apple-system, BlinkMacSystemFont, SegoeUI, Trebuchet MS, Roboto, Ubuntu, sans-serif",
@@ -203,11 +223,13 @@
 </div>
 <!-- TradingView Widget END -->
   </div>
+
+ 
   <div class="column" style="background-color:rgb(255, 255, 255);">
     <!-- TradingView Widget BEGIN -->
 <div class="tradingview2">
   <div id="tradingview_fa309"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-TSLA/" rel="noopener" target="_blank"><span class="blue-text">TSLA Stock Price Today</span></a> by TradingView</div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-TSLA/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
   new TradingView.MediumWidget(
@@ -217,17 +239,27 @@
       "Tesla",
       "NASDAQ:TSLA|1D"
     ]
+  ,
+  [
+      "Amazon",
+      "NASDAQ:AMZN|1D"
+    ]
+  ,
+  [
+      "Netflix",
+      "NASDAQ:NFLX|1D"
+    ]
   ],
   "chartOnly": false,
   "width": "100%",
-  "height": "360",
+  "height": "350",
   "locale": "en",
   "colorTheme": "light",
   "gridLineColor": "rgba(240, 243, 250, 0)",
   "fontColor": "#787B86",
   "isTransparent": false,
   "autosize": false,
-  "showVolume": false,
+  "showVolume": true,
   "scalePosition": "left",
   "scaleMode": "Normal",
   "fontFamily": "-apple-system, BlinkMacSystemFont, SegoeUI, Trebuchet MS, Roboto, Ubuntu, sans-serif",
@@ -240,11 +272,94 @@
   </script>
 </div>
 
-
-
-
 <!-- TradingView Widget END -->
-  </div>
+</div>
+</div>
+
+  <div class="row">
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview3">
+  <div id="tradingview_65afe"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NVDA/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.MediumWidget(
+  {
+  "symbols": [
+    [
+      "Nvidia",
+      "NVDA|1D"
+    ],
+    [
+      "Twitter",
+      "TWTR|1D"
+    ],
+    [
+      "AMD",
+      "AMD|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": "100%",
+  "height": "350",
+  "locale": "en",
+  "colorTheme": "light",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "fontColor": "#787B86",
+  "isTransparent": false,
+  "autosize": false,
+  "showVolume": true,
+  "scalePosition": "left",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, SegoeUI, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "chartType": "line",
+  "container_id": "tradingview_65afe"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+
+<div class="column" style="background-color:rgb(255, 255, 255);">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview4">
+  <div id="tradingview_eda1f"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/VIX/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.MediumWidget(
+  {
+  "symbols": [
+    [
+      "VIX",
+      "VIX|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": "100%",
+  "height": "350",
+  "locale": "en",
+  "colorTheme": "light",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "fontColor": "#787B86",
+  "isTransparent": false,
+  "autosize": false,
+  "showVolume": true,
+  "scalePosition": "left",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, SegoeUI, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "chartType": "line",
+  "container_id": "tradingview_eda1f"
+}
+  );
+  </script>
+<!-- TradingView Widget END -->
 </div>
 </div>
 
@@ -282,8 +397,6 @@ for (var i = 0; i < btns.length; i++) {
 </script>
 </div>
 
-
-</div>
 <!-- TradingView Widget BEGIN -->
 <div class="stocks">
   <div class="tradingview-widget-container__widget"></div>
@@ -336,6 +449,8 @@ src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.
 	
 	 
 <!-- TradingView Widget END -->
+</div>
+</div>
 
 <div class="news">
   <script type="text/javascript">
@@ -345,7 +460,7 @@ src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.
   src="https://freeserv-static.dukascopy.com/2.0/core.js">
 </script>
   </div>
-
+</div>
 
 
 
