@@ -27,10 +27,10 @@ li a:hover {
 
 .navbar {
   text-align: left;
-  width: 675px;
+  width: 800px;
   margin: auto;
   background: white;
-  padding: .7em;
+  padding: 1.1em;
 }
 
 .navbar nav {
@@ -166,15 +166,35 @@ a:hover {
 
 .gridlist {
   width: 100%;
-  padding: 9px;
+  height: 25%;
+  padding: 0.5px;
 
+}
+
+.tradingview1 {
+  width: 100%;
+}
+
+.tradingview2 {
+  width: 100%;
+  
+}
+
+.tradingview3 {
+  width: 100%;
+  
+}
+
+.tradingview4 {
+  width: 100%;
+  
 }
 
 .stocks {
   height: auto;
   width: 100%;
-  margin: auto;
-  float: bottom;
+  padding: 1px;
+  float: none;
   display: block;
   border: none;
   pointer-events: default;
@@ -184,10 +204,10 @@ a:hover {
   height: auto;
   width: 100%;
   margin: auto;
-  float: bottom;
+  float: none;
   display: block;
   border: none;
-  padding: 10px;
+  padding: 3px;
   pointer-events: default;
 }
 
@@ -200,9 +220,13 @@ a:hover {
 
 /* Create two equal columns that floats next to each other */
 .column {
-  float: left;
+  float: center;
   width: 50%;
   padding: 5px;
+}
+
+.row {
+  float: none;
 }
 
 
@@ -221,9 +245,10 @@ a:hover {
 /* Style the search field */
 form.searchbar input[type="text"] {
   padding: 10px;
+  height: 10px;
   font-size: 11px;
   float: left;
-  width: 75%;
+  width: 100%;
   background: #ffffff;
   
 }
