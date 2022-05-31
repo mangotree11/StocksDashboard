@@ -35,7 +35,7 @@ li a:hover {
 
 .navbar nav {
   display: inline-block;
-  padding: 0.1em;
+  padding: .1em;
 }
 
 .navbar nav .primary-nav {
@@ -147,32 +147,38 @@ a:hover {
 
 .btc {
   height: auto;
-  width: 100%;
+  width: 95%;
   margin: auto;
   float: none;
   display: block;
   pointer-events: none;
+  
 }
 
 .eth {
   height: auto;
-  width: 100%;
+  width: 95%;
   margin: auto;
   float: none;
   display: block;
   pointer-events: none;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 
 .gridlist {
   width: 100%;
-  height: 25%;
-  padding: 0.5px;
+  height: 50%;
+  padding: .1px;
 
 }
 
 .tradingview1 {
-  width: 100%;
+  width: 95%;
+  padding: 1px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .tradingview2 {
@@ -187,6 +193,7 @@ a:hover {
 
 .tradingview4 {
   width: 100%;
+  
   
 }
 
@@ -207,7 +214,7 @@ a:hover {
   float: none;
   display: block;
   border: none;
-  padding: 3px;
+  padding: 1px;
   pointer-events: default;
 }
 
@@ -222,11 +229,11 @@ a:hover {
 .column {
   float: center;
   width: 50%;
-  padding: 5px;
 }
 
 .row {
   float: none;
+  padding: 1px;
 }
 
 
@@ -250,6 +257,7 @@ form.searchbar input[type="text"] {
   float: left;
   width: 100%;
   background: #ffffff;
+  display: none;
   
 }
 
@@ -263,6 +271,7 @@ form.searchbar button {
   border-left: none;
   /* Prevent double borders */
   cursor: pointer;
+  display: none;
 }
 
 form.searchbar button:hover {
