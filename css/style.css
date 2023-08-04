@@ -26,6 +26,12 @@ li a:hover {
   background-color: rgba(193, 193, 193, 0.126);
 }
 
+.googlesignin {
+  display: flex;
+  justify-content: center;
+  padding: .5em;
+}
+
 .navbar {
   text-align: left;
   width: 900px;
