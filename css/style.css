@@ -10,6 +10,7 @@ ul {
   overflow: hidden;
 }
 
+
 li {
   float: left;
 }
@@ -27,15 +28,18 @@ li a:hover {
 
 .navbar {
   text-align: left;
-  width: 800px;
+  width: 900px;
   margin: auto;
   background: white;
   padding: 1.1em;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar nav {
-  display: inline-block;
   padding: .1em;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar nav .primary-nav {
